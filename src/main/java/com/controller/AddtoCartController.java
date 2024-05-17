@@ -15,7 +15,7 @@ public class AddtoCartController {
 
 		int productId = Integer.parseInt(request.getParameter("productId"));
 		HttpSession hs = request.getSession();
-		List<CartItem> cartItemsList = (List<CartItem>) hs.getAttribute("itemsList");
+		List<CartItem> cartItemsList = (List<CartItem>) hs.getAttribute("itemsList");	//Access the itemlist(session variable) 
 
 		boolean flag = false;
 
